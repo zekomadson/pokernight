@@ -1,0 +1,51 @@
+:root {
+    --primary-color: forestgreen;
+    --secondary-color: lightgreen;
+    --background-color: black;
+    --text-color: white;
+}
+
+* {
+    border: 1px solid var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+.horizontal-flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.login-button-parent {
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    background-color: pink;
+    color: var(--background-color);
+    height: 8vh;
+    width: 10vw;
+    margin: 1vh 1vw;
+    font-size: 1.2rem;
+}
